@@ -7,7 +7,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = { self, nixpkgs, home-manager, hyprland, hardware, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, hyprland, ... }@inputs: {
     nixosModules.selena = import ./default.nix;
     nixosModules.default = self.nixosModules.selena;
   };
