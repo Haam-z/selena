@@ -16,6 +16,18 @@
         path = ./templates/system/base;
         description = "template for system modules";
       };
+      system-root = {
+        path = ./templates/system/root;
+        description = "template for root modules";
+      };
+      system-servises = {
+        path = ./templates/system/servises;
+        description = "template for servises modules";
+      };
+      system-system-packages = {
+        path = ./templates/system/system-packages;
+        description = "template for system-packges modules";
+      };
       home = {
         path = ./templates/home/base;
         description = "template for home modules";
@@ -25,7 +37,7 @@
         description = "template for prokects";
       };
       module = {
-        path = ./templates/module;
+        path = ./templates/moduel;
         description = "template for selena modules";
       };
     };
