@@ -10,7 +10,7 @@ in {
     xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
     services = { flatpak.enable = true; };
     nix = {
-      package = pkgs.nixFlakes;
+      #package = pkgs.nixFlakes;
       extraOptions = "experimental-features = nix-command flakes";
       settings.trusted-substituters = [ "http://cache.nixos.org" ];
       settings.substituters = [ "http://cache.nixos.org" ];

@@ -8,7 +8,7 @@ in {
   config = mkIf cfg.enable {
     hardware.bluetooth = {
       enable = true;
-      package = pkgs.bluezFull;
+      #package = pkgs.bluezFull;
       powerOnBoot = true;
     };
   };
