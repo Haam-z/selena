@@ -14,6 +14,8 @@
       nixosModules.selena = import ./modules/default.nix;
       nixosModules.default = self.nixosModules.selena;
       # Your custom packages and modifications, exported as overlays
+      packages = let pkgs = nixpkgs.legacyPackages."x86_64-linux";
+      in import ./pkgs { inherit pkgs; };
       overlays = import ./overlays { inherit inputs; };
       templates = {
         system = {
