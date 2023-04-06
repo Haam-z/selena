@@ -3,7 +3,6 @@ import <nixpkgs/nixos/tests/make-test-python.nix> {
   nodes.machine = { config, pkgs, ... }: {
     imports = [ ../modules/default.nix ];
     selena = {
-      application.graphical.editors.enable = true;
       system = {
         root = {
           boot-loader.enable = true;
