@@ -13,6 +13,8 @@
     { self, nixpkgs, nix-doom-emacs, home-manager, hyprland, ... }@inputs: {
       nixosModules.selena = import ./modules/default.nix;
       nixosModules.default = self.nixosModules.selena;
+      # Your custom packages and modifications, exported as overlays
+      overlays = import ./overlays { inherit inputs; };
       templates = {
         system = {
           path = ./templates/system/base;
