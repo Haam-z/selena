@@ -1,1 +1,4 @@
-{ imports = [ ./home/default.nix ./system/default.nix ]; }
+{
+  imports =
+    [ ./application/default.nix ./home/default.nix ./system/default.nix ];
+}

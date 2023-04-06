@@ -10,7 +10,7 @@ in {
       fontconfig.enable = true;
       fontDir.enable = true;
       enableGhostscriptFonts = true;
-      #fonts = [ pkgs.haamfonts ];
+      fonts = [ pkgs.haamfonts ];
     };
   };
 }
